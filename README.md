@@ -66,8 +66,8 @@ No modules.
 | <a name="input_description"></a> [description](#input\_description) | This overwrites the default generated description for the security group. | `string` | `"Managed by Terraform"` | no |
 | <a name="input_vpc_id"></a> [vpc_id](#input\_vpc\_id) | The ID of the VPC that the security group will be associated with. | `string` | `null` | no |
 | <a name="input_network_interface_resource_associations"></a> [network_interface_resource_associations](#input\_network\_interface\_resource\_associations) | The IDs of already existing network interfaces to be associated with the created security group. If used, do not declare the security group in the creation of those resources. | `list(string)` | `[]` | no |
-| <a name="input_ingress_rules"></a> [ingress_rules](#input\_ingress\_rules) | The list of rules for ingress traffic. Required fields for each rule are 'protocol', 'from_port', 'to_port', and at least one of 'cidr_blocks', 'ipv6_cidr_blocks', 'security_groups', 'self', or 'prefix_list_sg'. Optional fields are 'description' and those not used from the previous list. | `list(object(...))` _see Security Group Rules section below_ | `[]` | no |
-| <a name="input_egress_rules"></a> [egress_rules](#input\_egress\_rules) | The list of rules for egress traffic. Required fields for each rule are 'protocol', 'from_port', 'to_port', and at least one of 'cidr_blocks', 'ipv6_cidr_blocks', 'security_groups', 'self', or 'prefix_list_sg'. Optional fields are 'description' and those not used from the previous list. | `list(object(...))` _see Security Group Rules section below_ | `[]` | no |
+| <a name="input_ingress_rules"></a> [ingress_rules](#input\_ingress\_rules) | The list of rules for ingress traffic. Required fields for each rule are 'protocol', 'from_port', 'to_port', and at least one of 'cidr_blocks', 'ipv6_cidr_blocks', 'security_groups', 'self', or 'prefix_list_sg'. Optional fields are 'description' and those not used from the previous list. | `list(object(...))` _see [Security Group Rules](#section\_security\_group\_rules) section below_ | `[]` | no |
+| <a name="input_egress_rules"></a> [egress_rules](#input\_egress\_rules) | The list of rules for egress traffic. Required fields for each rule are 'protocol', 'from_port', 'to_port', and at least one of 'cidr_blocks', 'ipv6_cidr_blocks', 'security_groups', 'self', or 'prefix_list_sg'. Optional fields are 'description' and those not used from the previous list. | `list(object(...))` _see [Security Group Rules](#section\_security\_group\_rules) section below_ | `[]` | no |
 
 ## Outputs
 
@@ -76,7 +76,7 @@ No modules.
 | <a name="output_id"></a> [id](#output\_id) | The id of the created security group |
 | <a name="output_associated_network_interfaces"></a> [associated\_network\_interfaces](#output\_associated\_network\_interfaces) | The ARNs of the network interfaces associated to the security group by this module |
 
-## Security Group Rules
+## <a name="section_security_group_rules"></a> [Security Group Rules](#section\_security\_group_\rules)
 
 Both the `ingress_rules` and `egress_rules` input variables hold the same structure. When creating the list of rules objects, the code should resemble:
 

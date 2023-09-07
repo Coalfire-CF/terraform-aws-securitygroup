@@ -1,4 +1,4 @@
-resource "aws_security_group" "main" {
+resource "aws_security_group" "this" {
   name        = local.use_prefix ? null : var.name
   name_prefix = local.use_prefix ? var.sg_name_prefix : null
 
@@ -50,10 +50,10 @@ resource "aws_security_group" "main" {
   tags = var.tags
 }
 
-resource "aws_network_interface_sg_attachment" "main" {
+resource "aws_network_interface_sg_attachment" "this" {
   count = length(var.network_interface_resource_associations)
 
-  security_group_id    = aws_security_group.main.id
+  security_group_id    = aws_security_group.this.id
   network_interface_id = var.network_interface_resource_associations[count.index]
 }
 

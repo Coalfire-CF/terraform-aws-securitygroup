@@ -35,13 +35,15 @@ The directory `examples/simple` shows a basic declaration and use of the module,
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
-Terraform 1.5.x or higher.
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >=3.24.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_terraform"></a> [terraform](#provider\_terraform) | >=1.5.0 |
 | <a name="provider_aws"></a> [aws](#provider\_aws) | >=3.24.0 |
 
 ## Modules
@@ -52,73 +54,29 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [aws_security_group.main](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group) | resource |
-| [aws_network_interface_sg_attachment.main](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/network_interface_sg_attachment) | resource |
-| [aws_network_interface.interfaces](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/network_interface) | data |
+| [aws_network_interface_sg_attachment.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/network_interface_sg_attachment) | resource |
+| [aws_security_group.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group) | resource |
+| [aws_network_interface.interfaces](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/network_interface) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_name"></a> [name](#input\_name) | The name of the created security group. Conflicts with 'sg_name_prefix' | `string` | `""` | yes |
-| <a name="input_sg_name_prefix"></a> [sg\_name\_prefix](#input\_sg\_name\_prefix) | The prefix to be used while generating a unique name for the security group. Conflicts with 'sg_name' | `string` | `""` | yes |
+| <a name="input_description"></a> [description](#input\_description) | This overwrites the default generated description for the security group | `string` | `"Managed by Terraform"` | no |
+| <a name="input_egress_rules"></a> [egress\_rules](#input\_egress\_rules) | The list of rules for egress traffic. Required fields for each rule are 'protocol', 'from\_port', 'to\_port', and at least one of 'cidr\_blocks', 'ipv6\_cidr\_blocks', 'security\_groups', 'self', or 'prefix\_list\_sg'. Optional fields are 'description' and those not used from the previous list | <pre>list(object({<br>    protocol         = string<br>    from_port        = optional(string)<br>    to_port          = optional(string)<br>    cidr_blocks      = optional(list(string), [])<br>    ipv6_cidr_blocks = optional(list(string), [])<br>    prefix_list_ids  = optional(list(string), [])<br>    security_groups  = optional(list(string), [])<br>    self             = optional(bool)<br>    description      = optional(string, "Managed by Terraform")<br>  }))</pre> | `[]` | no |
+| <a name="input_ingress_rules"></a> [ingress\_rules](#input\_ingress\_rules) | The list of rules for ingress traffic. Required fields for each rule are 'protocol', 'from\_port', 'to\_port', and at least one of 'cidr\_blocks', 'ipv6\_cidr\_blocks', 'security\_groups', 'self', or 'prefix\_list\_sg'. Optional fields are 'description' and those not used from the previous list | <pre>list(object({<br>    protocol         = string<br>    from_port        = string<br>    to_port          = string<br>    cidr_blocks      = optional(list(string), [])<br>    ipv6_cidr_blocks = optional(list(string), [])<br>    prefix_list_ids  = optional(list(string), [])<br>    security_groups  = optional(list(string), [])<br>    self             = optional(bool)<br>    description      = optional(string, "Managed by Terraform")<br>  }))</pre> | `[]` | no |
+| <a name="input_name"></a> [name](#input\_name) | The name of the created security group. Conflicts with 'sg\_name\_prefix' | `string` | `""` | no |
+| <a name="input_network_interface_resource_associations"></a> [network\_interface\_resource\_associations](#input\_network\_interface\_resource\_associations) | The IDs of already existing network interfaces to be associated with the created security group. If used, do not declare sg in the creation of those resources | `list(string)` | `[]` | no |
+| <a name="input_sg_name_prefix"></a> [sg\_name\_prefix](#input\_sg\_name\_prefix) | The prefix to be used while generating a unique name for the security group. Conflicts with 'sg\_name' | `string` | `""` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Tags to add to the created security group | `map(string)` | `{}` | no |
-| <a name="input_description"></a> [description](#input\_description) | This overwrites the default generated description for the security group. | `string` | `"Managed by Terraform"` | no |
-| <a name="input_vpc_id"></a> [vpc_id](#input\_vpc\_id) | The ID of the VPC that the security group will be associated with. | `string` | `null` | no |
-| <a name="input_network_interface_resource_associations"></a> [network_interface_resource_associations](#input\_network\_interface\_resource\_associations) | The IDs of already existing network interfaces to be associated with the created security group. If used, do not declare the security group in the creation of those resources. | `list(string)` | `[]` | no |
-| <a name="input_ingress_rules"></a> [ingress_rules](#input\_ingress\_rules) | The list of rules for ingress traffic. Required fields for each rule are 'protocol', 'from_port', 'to_port', and at least one of 'cidr_blocks', 'ipv6_cidr_blocks', 'security_groups', 'self', or 'prefix_list_sg'. Optional fields are 'description' and those not used from the previous list. | `list(object(...))` _see [Security Group Rules](#section\_security\_group\_rules) section below_ | `[]` | no |
-| <a name="input_egress_rules"></a> [egress_rules](#input\_egress\_rules) | The list of rules for egress traffic. Required fields for each rule are 'protocol', 'from_port', 'to_port', and at least one of 'cidr_blocks', 'ipv6_cidr_blocks', 'security_groups', 'self', or 'prefix_list_sg'. Optional fields are 'description' and those not used from the previous list. | `list(object(...))` _see [Security Group Rules](#section\_security\_group\_rules) section below_ | `[]` | no |
+| <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | The ID of the VPC that the security group will be associated with | `string` | `null` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| <a name="output_id"></a> [id](#output\_id) | The id of the created security group |
 | <a name="output_associated_network_interfaces"></a> [associated\_network\_interfaces](#output\_associated\_network\_interfaces) | The ARNs of the network interfaces associated to the security group by this module |
-
-## <a name="section_security_group_rules"></a> [Security Group Rules](#section\_security\_group_\rules)
-
-Both the `ingress_rules` and `egress_rules` input variables hold the same structure. When creating the list of rules objects, the code should resemble:
-
-``` HCL
-  ingress_rules = [{
-    protocol    = "tcp"
-    from_port   = "443"
-    to_port     = "443"
-    cidr_blocks = [aws_vpc.main.cidr_block]
-    },
-    {
-      # ssh
-      protocol    = "tcp"
-      from_port   = "22"
-      to_port     = "22"
-      cidr_blocks = [aws_vpc.main.cidr_block]
-  }]
-
-  egress_rules = [{
-    protocol    = "-1"
-    from_port   = "0"
-    to_port     = "0"
-    cidr_blocks = ["0.0.0.0/0"]
-  }]
-```
-The arguments accepted by both `ingress_rules` and `egress_rules` are also identical and are as follows:
-
-| Name | Type | Required |
-|------|------|:--------:|
-| <a name="input_protocol"></a> [protocol](#input\_protocol) | `string` | yes |
-| <a name="input_from_port"></a> [from_port](#input\_from\_port) | `string` | yes |
-| <a name="input_to_port"></a> [to_port](#input\_to\_port) | `string` | yes |
-| <a name="input_cidr_blocks"></a> [cidr_blocks](#input\_cidr\_blocks) | `list(string)` | no |
-| <a name="input_ipv6_cidr_blocks"></a> [ipv6_cidr_blocks](#input\_ipv6\_cidr\_blocks) | `list(string)` | no |
-| <a name="input_prefix_list_ids"></a> [prefix_list_ids](#input\_prefix\_list\_ids) | `list(string)` | no |
-| <a name="input_security_groups"></a> [security_groups](#input\_security\_groups) | `list(string)` | no |
-| <a name="input_self"></a> [self](#input\_self) | `bool` | no |
-| <a name="input_description"></a> [description](#input\_description) | `string` | no |
-
-All ingress and egress variables follow the [official Terraform documentation on inline security group rules](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group#ingress).
-
-
+| <a name="output_id"></a> [id](#output\_id) | The id of the created security group |
 <!-- END_TF_DOCS -->
 
 ## Contributing

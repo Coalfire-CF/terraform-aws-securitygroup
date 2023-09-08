@@ -53,12 +53,12 @@ module "example_sg" {
     }
   ]
 
-  # egress_rules = [
-  #   {
-  #     protocol    = "-1"
-  #     from_port   = "0"
-  #     to_port     = "0"
-  #     cidr_blocks = ["0.0.0.0/0"]
-  #   }
-  # ]
+  egress_rules = [
+    {
+      protocol    = "-1"
+      from_port   = "0"
+      to_port     = "0"
+      cidr_blocks = ["0.0.0.0/0"]
+    }
+  ]
 }

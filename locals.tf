@@ -5,5 +5,5 @@ locals {
 # Ensure dynamic blocks run
 locals {
   ingress_rules = var.ingress_rules == null ? [] : var.ingress_rules
-  egress_rules = var.egress_rules == null ? [] : var.egress_rules
+  egress_rules  = var.egress_rules == null ? [] : var.egress_rules
 }

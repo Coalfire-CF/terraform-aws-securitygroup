@@ -7,11 +7,11 @@ resource "aws_security_group" "this" {
   vpc_id = var.vpc_id
 
   ingress = [
-    for rule in var.ingress_rules: merge(null, rule)
+    for rule in local.ingress_rules: merge(null, rule)
   ]
 
   egress = [
-    for rule in var.egress_rules: merge(null, rule)
+    for rule in local.egress_rules: merge(null, rule)
   ]
 
   tags = var.tags

@@ -4,6 +4,6 @@ locals {
 
 # Ensure dynamic blocks run
 locals {
-  ingress_rules = length(var.ingress_rules) == 0 ? [object()] : var.ingress_rules
-  egress_rules = length(var.ingress_rules) == 0 ? [object()] : var.egress_rules
+  ingress_rules = var.ingress_rules == null ? [] : var.ingress_rules
+  egress_rules = var.egress_rules == null ? [] : var.egress_rules
 }

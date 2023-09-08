@@ -38,13 +38,13 @@ The directory `examples/simple` shows a basic declaration and use of the module,
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >=3.24.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >=3.26.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >=3.24.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >=3.26.0 |
 
 ## Modules
 
@@ -63,7 +63,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_description"></a> [description](#input\_description) | This overwrites the default generated description for the security group | `string` | `"Managed by Terraform"` | no |
-| <a name="input_egress_rules"></a> [egress\_rules](#input\_egress\_rules) | The list of rules for egress traffic. Required fields for each rule are 'protocol', 'from\_port', 'to\_port', and at least one of 'cidr\_blocks', 'ipv6\_cidr\_blocks', 'security\_groups', 'self', or 'prefix\_list\_sg'. Optional fields are 'description' and those not used from the previous list | <pre>list(object({<br>    protocol         = string<br>    from_port        = optional(string)<br>    to_port          = optional(string)<br>    cidr_blocks      = optional(list(string), [])<br>    ipv6_cidr_blocks = optional(list(string), [])<br>    prefix_list_ids  = optional(list(string), [])<br>    security_groups  = optional(list(string), [])<br>    self             = optional(bool)<br>    description      = optional(string, "Managed by Terraform")<br>  }))</pre> | `[]` | no |
+| <a name="input_egress_rules"></a> [egress\_rules](#input\_egress\_rules) | The list of rules for egress traffic. Required fields for each rule are 'protocol', 'from\_port', 'to\_port', and at least one of 'cidr\_blocks', 'ipv6\_cidr\_blocks', 'security\_groups', 'self', or 'prefix\_list\_sg'. Optional fields are 'description' and those not used from the previous list | <pre>list(object({<br>    protocol         = string<br>    from_port        = string<br>    to_port          = string<br>    cidr_blocks      = optional(list(string), [])<br>    ipv6_cidr_blocks = optional(list(string), [])<br>    prefix_list_ids  = optional(list(string), [])<br>    security_groups  = optional(list(string), [])<br>    self             = optional(bool)<br>    description      = optional(string, "Managed by Terraform")<br>  }))</pre> | `[]` | no |
 | <a name="input_ingress_rules"></a> [ingress\_rules](#input\_ingress\_rules) | The list of rules for ingress traffic. Required fields for each rule are 'protocol', 'from\_port', 'to\_port', and at least one of 'cidr\_blocks', 'ipv6\_cidr\_blocks', 'security\_groups', 'self', or 'prefix\_list\_sg'. Optional fields are 'description' and those not used from the previous list | <pre>list(object({<br>    protocol         = string<br>    from_port        = string<br>    to_port          = string<br>    cidr_blocks      = optional(list(string), [])<br>    ipv6_cidr_blocks = optional(list(string), [])<br>    prefix_list_ids  = optional(list(string), [])<br>    security_groups  = optional(list(string), [])<br>    self             = optional(bool)<br>    description      = optional(string, "Managed by Terraform")<br>  }))</pre> | `[]` | no |
 | <a name="input_name"></a> [name](#input\_name) | The name of the created security group. Conflicts with 'sg\_name\_prefix' | `string` | `""` | no |
 | <a name="input_network_interface_resource_associations"></a> [network\_interface\_resource\_associations](#input\_network\_interface\_resource\_associations) | The IDs of already existing network interfaces to be associated with the created security group. If used, do not declare sg in the creation of those resources | `list(string)` | `[]` | no |

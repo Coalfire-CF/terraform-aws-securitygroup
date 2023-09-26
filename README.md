@@ -3,7 +3,11 @@
 
 </div>
 
-## ACE-AWS-SecurityGroup
+# AWS Security Group Terraform Module
+
+## Description
+
+This module creates an AWS security group with a network interface attachment to connect to an existing network interface.
 
 ## Dependencies
 
@@ -11,12 +15,8 @@ Any resources requiring security groups
 
 ## Resource List
 
-Insert a high-level list of resources created as a part of this module. E.g.
-
 - Security Group
 - Network Interface Associations (optional)
-
-## Code Updates
 
 ## Deployment Steps
 

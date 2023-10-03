@@ -32,7 +32,7 @@ resource "aws_instance" "example" {
 }
 
 module "example_sg" {
-  source = "https://github.com/Coalfire-CF/terraform-aws-securitygroup"
+  source = "github.com/Coalfire-CF/terraform-aws-securitygroup"
 
   name = "security_group_module_example_sg"
 

@@ -56,6 +56,7 @@ resource "aws_instance" "instance3" {
 }
 
 module "example_sg" {
+  #source = "git::https://github.com/Coalfire-CF/terraform-aws-securitygroup"
   source = "../.."
 
   name = "security_group_module_example_sg"

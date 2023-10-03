@@ -3,7 +3,7 @@
 
 </div>
 
-## ACE-AWS-SecurityGroup
+## terraform-aws-securitygroup
 
 ## Dependencies
 

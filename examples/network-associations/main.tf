@@ -62,26 +62,28 @@ module "example_sg" {
 
   vpc_id = aws_vpc.main.id
 
-  ingress_rules = [{
-    protocol    = "tcp"
-    from_port   = "443"
-    to_port     = "443"
-    cidr_blocks = [aws_vpc.main.cidr_block]
-    },
-    {
-      # ssh
+  ingress_rules = {
+    "allow_https" = {
+      ip_protocol = "tcp"
+      from_port   = "443"
+      to_port     = "443"
+      cidr_ipv4   = aws_vpc.main.cidr_block
+    }
+    "allow_ssh" = {
       protocol    = "tcp"
       from_port   = "22"
       to_port     = "22"
       cidr_blocks = [aws_vpc.main.cidr_block]
-  }]
+    }
+  }
 
-  egress_rules = [{
-    protocol    = "-1"
-    from_port   = "0"
-    to_port     = "0"
-    cidr_blocks = ["0.0.0.0/0"]
-  }]
+  egress_rules = {
+    "allow_all_egress" = {
+      ip_protocol = "-1"
+      cidr_ipv4   = "0.0.0.0/0"
+      description = "Allow all egress"
+    }
+  }
 
   network_interface_resource_associations = [
     aws_instance.instance1.primary_network_interface_id,

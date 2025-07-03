@@ -11,8 +11,8 @@ variable "sg_name_prefix" {
 }
 
 variable "tags" {
-  description = "Tags to add to the created security group"
-  type        = map(string)
+  type        = map(any)
+  description = "Additional tags (e.g. map(`BusinessUnit`,`XYZ`)."
   default     = {}
 }
 

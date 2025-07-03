@@ -3,7 +3,7 @@ resource "aws_security_group" "this" {
   name_prefix = local.use_prefix ? var.sg_name_prefix : null
   description = var.description
   vpc_id      = var.vpc_id
-  tags        = var.tags
+  tags        = local.internal_tags
 }
 
 resource "aws_vpc_security_group_ingress_rule" "this" {

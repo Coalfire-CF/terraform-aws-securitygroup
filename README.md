@@ -180,11 +180,16 @@ SSO-based authentication (via IAM Identity Center SSO):
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
-No requirements.
+| Name | Version |
+|------|---------|
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | ~> 5.0 |
 
 ## Providers
 
-No providers.
+| Name | Version |
+|------|---------|
+| <a name="provider_aws"></a> [aws](#provider\_aws) | ~> 5.0 |
 
 ## Modules
 
@@ -192,15 +197,33 @@ No modules.
 
 ## Resources
 
-No resources.
+| Name | Type |
+|------|------|
+| [aws_network_interface_sg_attachment.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/network_interface_sg_attachment) | resource |
+| [aws_security_group.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group) | resource |
+| [aws_vpc_security_group_egress_rule.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc_security_group_egress_rule) | resource |
+| [aws_vpc_security_group_ingress_rule.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc_security_group_ingress_rule) | resource |
+| [aws_network_interface.interfaces](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/network_interface) | data source |
 
 ## Inputs
 
-No inputs.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_description"></a> [description](#input\_description) | This overwrites the default generated description for the security group | `string` | `"Managed by Terraform"` | no |
+| <a name="input_egress_rules"></a> [egress\_rules](#input\_egress\_rules) | The list of rules for egress traffic. Required fields for each rule are 'protocol', 'from\_port', 'to\_port', and at least one of 'cidr\_blocks', 'ipv6\_cidr\_blocks', 'security\_groups', 'self', or 'prefix\_list\_sg'. Optional fields are 'description' and those not used from the previous list | <pre>map(object({<br/>    cidr_ipv4                    = optional(string, null)<br/>    cidr_ipv6                    = optional(string, null)<br/>    description                  = optional(string, "Managed by Terraform")<br/>    from_port                    = optional(string, null)<br/>    ip_protocol                  = optional(string, null)<br/>    prefix_list_id               = optional(string, null)<br/>    referenced_security_group_id = optional(string, null)<br/>    to_port                      = optional(string, null)<br/>  }))</pre> | `{}` | no |
+| <a name="input_ingress_rules"></a> [ingress\_rules](#input\_ingress\_rules) | The list of rules for ingress traffic. Required fields for each rule are 'protocol', 'from\_port', 'to\_port', and at least one of 'cidr\_blocks', 'ipv6\_cidr\_blocks', 'security\_groups', 'self', or 'prefix\_list\_sg'. Optional fields are 'description' and those not used from the previous list | <pre>map(object({<br/>    cidr_ipv4                    = optional(string, null)<br/>    cidr_ipv6                    = optional(string, null)<br/>    description                  = optional(string, "Managed by Terraform")<br/>    from_port                    = optional(string, null)<br/>    ip_protocol                  = optional(string, null)<br/>    prefix_list_id               = optional(string, null)<br/>    referenced_security_group_id = optional(string, null)<br/>    to_port                      = optional(string, null)<br/>  }))</pre> | `{}` | no |
+| <a name="input_name"></a> [name](#input\_name) | The name of the created security group. Conflicts with 'sg\_name\_prefix' | `string` | `""` | no |
+| <a name="input_network_interface_resource_associations"></a> [network\_interface\_resource\_associations](#input\_network\_interface\_resource\_associations) | The IDs of already existing network interfaces to be associated with the created security group. If used, do not declare sg in the creation of those resources | `list(string)` | `[]` | no |
+| <a name="input_sg_name_prefix"></a> [sg\_name\_prefix](#input\_sg\_name\_prefix) | The prefix to be used while generating a unique name for the security group. Conflicts with 'sg\_name' | `string` | `""` | no |
+| <a name="input_tags"></a> [tags](#input\_tags) | Additional tags (e.g. map(`BusinessUnit`,`XYZ`). | `map(any)` | `{}` | no |
+| <a name="input_vpc_id"></a> [vpc\_id](#input\_vpc\_id) | The ID of the VPC that the security group will be associated with | `string` | `null` | no |
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_associated_network_interfaces"></a> [associated\_network\_interfaces](#output\_associated\_network\_interfaces) | The ARNs of the network interfaces associated to the security group by this module |
+| <a name="output_id"></a> [id](#output\_id) | The id of the created security group |
 <!-- END_TF_DOCS -->
 
 ## Contributing

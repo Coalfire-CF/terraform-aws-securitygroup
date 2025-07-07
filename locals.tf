@@ -4,6 +4,6 @@ locals {
   internal_tags = {
 
     Managed-by = "Terraform"
-    Module     = "terraform-aws-kms"
+    Module     = "terraform-aws-securitygroup"
   }
 }

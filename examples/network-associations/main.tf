@@ -55,7 +55,7 @@ resource "aws_instance" "instance3" {
 
 # Security Group module call configuration
 module "example_sg" {
-  source = "../../../../../modules/terraform-aws-securitygroup" # Path to security group module
+  source = "github.com/Coalfire-CF/terraform-aws-securitygroup" # Path to security group module
   name   = "security_group_module_example_network_assoc"        # Name assigned inside the module
   vpc_id = aws_vpc.main.id                                      # Associate SG with the created VPC
   tags   = local.global_tags

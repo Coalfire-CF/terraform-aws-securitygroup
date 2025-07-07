@@ -1,13 +1,11 @@
 variable "name" {
   description = "The name of the created security group. Conflicts with 'sg_name_prefix'"
   type        = string
-  default     = ""
 }
 
 variable "sg_name_prefix" {
   description = "The prefix to be used while generating a unique name for the security group. Conflicts with 'sg_name'"
   type        = string
-  default     = ""
 }
 
 variable "tags" {

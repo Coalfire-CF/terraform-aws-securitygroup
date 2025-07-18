@@ -1,18 +1,16 @@
 variable "name" {
   description = "The name of the created security group. Conflicts with 'sg_name_prefix'"
   type        = string
-  default     = ""
 }
 
 variable "sg_name_prefix" {
   description = "The prefix to be used while generating a unique name for the security group. Conflicts with 'sg_name'"
   type        = string
-  default     = ""
 }
 
 variable "tags" {
-  description = "Tags to add to the created security group"
-  type        = map(string)
+  type        = map(any)
+  description = "Additional tags (e.g. map(`BusinessUnit`,`XYZ`)."
   default     = {}
 }
 

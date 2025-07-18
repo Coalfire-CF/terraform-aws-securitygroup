@@ -1,7 +1,6 @@
 variable "aws_region" {
   description = "The region where things will be deployed by default"
   type        = string
-  default     = "us-east-1"
 }
 
 variable "profile" {
@@ -12,11 +11,15 @@ variable "profile" {
 variable "vpc_cidr" {
   description = "The cidr block for the vpc created for testing the security group"
   type        = string
-  default     = "10.1.0.0/24"
 }
 
 variable "subnet_cidr" {
   description = "The cidr block for the subnet created for testing the security group"
   type        = string
-  default     = "10.1.0.0/24"
+}
+
+variable "tags" {
+  type        = map(any)
+  default     = {}
+  description = "Additional tags (e.g. map(`BusinessUnit`,`XYZ`)."
 }

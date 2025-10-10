@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.1](https://github.com/Coalfire-CF/terraform-aws-securitygroup/compare/v1.1.0...v1.1.1) (2025-10-10)
+
+
+### Miscellaneous
+
+* refresh dependabot.yml & TF sources ([8f76df8](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/8f76df82cdbf15914b76c3bb4c4b0f90615c3847))
+* Sync template files ([dd0d1c0](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/dd0d1c0097608dd245435df7dec83138675978e4))
+* Sync template files from Coalfire-CF/CS-ToolingTemplate ([ed79626](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/ed79626d80c420d14f2cf2e6cdb8e215520648d9))
+
 ## [1.1.0](https://github.com/Coalfire-CF/terraform-aws-securitygroup/compare/v1.0.2...v1.1.0) (2025-10-02)
 
 

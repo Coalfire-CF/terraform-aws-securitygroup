@@ -241,3 +241,38 @@ No modules.
 ### Copyright
 
 Copyright © 2023 Coalfire Systems Inc.
+## Tree
+```
+.
+|-- CHANGELOG.md
+|-- CONTRIBUTING.md
+|-- LICENSE
+|-- License.md
+|-- README.md
+|-- coalfire_logo.png
+|-- examples
+|   |-- network-associations
+|   |   |-- README.md
+|   |   |-- locals.tf
+|   |   |-- main.tf
+|   |   |-- outputs.tf
+|   |   |-- providers.tf
+|   |   |-- tfvars
+|   |   |   |-- example.tfvars
+|   |   |-- variables.tf
+|   |-- simple
+|       |-- README.md
+|       |-- locals.tf
+|       |-- main.tf
+|       |-- outputs.tf
+|       |-- providers.tf
+|       |-- tfvars
+|       |   |-- example.tfvars
+|       |-- variables.tf
+|-- locals.tf
+|-- main.tf
+|-- outputs.tf
+|-- providers.tf
+|-- release-please-config.json
+|-- variables.tf
+```

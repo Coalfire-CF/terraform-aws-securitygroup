@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/Coalfire-CF/terraform-aws-securitygroup/compare/v1.1.1...v1.1.2) (2025-10-24)
+
+
+### Miscellaneous
+
+* update README tree ([484084c](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/484084cc6494a121a598d66aa9ef23c802f2457f))
+
 ## [1.1.1](https://github.com/Coalfire-CF/terraform-aws-securitygroup/compare/v1.1.0...v1.1.1) (2025-10-10)
 
 

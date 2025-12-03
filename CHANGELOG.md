@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.1.3](https://github.com/Coalfire-CF/terraform-aws-securitygroup/compare/v1.1.2...v1.1.3) (2025-12-03)
+
+
+### Miscellaneous
+
+* **deps:** update hashicorp/aws requirement from &gt;= 5.15.0, &lt; 6.17 to &gt;= 5.15.0, &lt; 6.18 in /examples/network-associations ([703a08d](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/703a08d925a38a3cd29360cbf92e9d795a4eed54))
+* **deps:** update hashicorp/aws requirement from &gt;= 5.15.0, &lt; 6.17 to &gt;= 5.15.0, &lt; 6.18 in /examples/simple ([e3ee7f5](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/e3ee7f5d1039f8d80efdf6e9bf7ae08e6c520d2a))
+* remove old LICENSE file ([b4c4808](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/b4c4808815c604869fa7e8b4879b713dd5afce74))
+* remove old LICENSE file ([3161fe6](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/3161fe6a5d3130383652efbd33698ba56891757e))
+* update README tree ([6dd9762](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/6dd97620e51527c919028c90f76050e787305548))
+
 ## [1.1.2](https://github.com/Coalfire-CF/terraform-aws-securitygroup/compare/v1.1.1...v1.1.2) (2025-10-24)
 
 

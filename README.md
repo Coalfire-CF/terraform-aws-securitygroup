@@ -29,10 +29,11 @@ Simple main.tf example:
 
 ```hcl
 module "example_sg" {
-  source = "github.com/Coalfire-CF/terraform-aws-securitygroup?ref=v1.0.1"  # Path to security group module
-  name   = "security_group_module_example_simple"                           # Name assigned inside the module
-  tags   = local.global_tags
-  vpc_id = aws_vpc.main.id     # Associate SG with the created VPC
+  source         = "github.com/Coalfire-CF/terraform-aws-securitygroup?ref=v1.1.3"  # Path to security group module
+  name           = "security_group_module_example_simple"                           # Name assigned inside the module
+  tags           = local.global_tags
+  vpc_id         = aws_vpc.main.id                                                  # Associate SG with the created VPC
+  sg_name_prefix = var.resource_prefix
 
   ingress_rules = {            # Ingress rules allowing inbound HTTPS and SSH traffic
     "allow_https" = {
@@ -63,10 +64,11 @@ Network Association main.tf example:
 
 ```hcl
 module "example_sg" {
-  source = "github.com/Coalfire-CF/terraform-aws-securitygroup?ref=v1.0.1"  # Path to security group module
-  name   = "security_group_module_example_network_assoc"                    # Name assigned inside the module
-  vpc_id = aws_vpc.main.id                                                  # Associate SG with the created VPC
-  tags   = local.global_tags
+  source         = "github.com/Coalfire-CF/terraform-aws-securitygroup?ref=v1.1.3"  # Path to security group module
+  name           = "security_group_module_example_network_assoc"                    # Name assigned inside the module
+  vpc_id         = aws_vpc.main.id                                                  # Associate SG with the created VPC
+  sg_name_prefix = var.resource_prefix
+  tags           = local.global_tags
 
   ingress_rules = {                         # Ingress rules allowing inbound HTTPS and SSH traffic
     "allow_https" = {
@@ -148,7 +150,7 @@ SSO-based authentication (via IAM Identity Center SSO):
 
 4. Change directories to the `security_group` directory.
 
-5. Ensure that the `prefix.auto.tfvars` variables are correct (especially the profile)
+5. Ensure that the `example.auto.tfvars` variables are correct (especially the profile)
 
 6. Customize code to meet requirements, e.g. add/remove inbound rules, add/remove outbound rules
 

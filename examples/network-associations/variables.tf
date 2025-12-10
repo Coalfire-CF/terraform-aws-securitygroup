@@ -8,6 +8,11 @@ variable "profile" {
   type        = string
 }
 
+variable "resource_prefix" {
+  description = "Prefix to be used for resource naming"
+  type        = string
+}
+
 variable "vpc_cidr" {
   description = "The cidr block for the vpc created for testing the security group"
   type        = string

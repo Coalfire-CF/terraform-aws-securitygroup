@@ -55,10 +55,11 @@ resource "aws_instance" "instance3" {
 
 # Security Group module call configuration
 module "example_sg" {
-  source = "git::https://github.com/Coalfire-CF/terraform-aws-securitygroup" # Path to security group module
-  name   = "security_group_module_example_network_assoc"        # Name assigned inside the module
-  vpc_id = aws_vpc.main.id                                      # Associate SG with the created VPC
-  tags   = local.global_tags
+  source         = "git::https://github.com/Coalfire-CF/terraform-aws-securitygroup" # Path to security group module
+  name           = "security_group_module_example_network_assoc"                     # Name assigned inside the module
+  vpc_id         = aws_vpc.main.id                                                   # Associate SG with the created VPC
+  sg_name_prefix = var.resource_prefix
+  tags           = local.global_tags
 
   ingress_rules = { # Ingress rules allowing inbound HTTPS and SSH traffic
     "allow_https" = {

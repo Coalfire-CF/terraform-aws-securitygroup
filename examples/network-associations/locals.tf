@@ -1,6 +1,6 @@
 locals {
   global_tags = {
-    Application = "This is a test"
+    Application = "cf-sandbox"
     Owner       = "Coalfire"
     Team        = "AWS Native Architecture PAK Team"
     Environment = "dev"

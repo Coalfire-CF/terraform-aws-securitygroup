@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.1.4](https://github.com/Coalfire-CF/terraform-aws-securitygroup/compare/v1.1.3...v1.1.4) (2025-12-10)
+
+
+### Miscellaneous
+
+* **deps:** update hashicorp/aws requirement from &gt;= 5.15.0, &lt; 6.18 to &gt;= 5.15.0, &lt; 6.26 ([1849d4d](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/1849d4d2aa8c335b0c40414067742fb89deeb28c))
+* **deps:** update hashicorp/aws requirement from &gt;= 5.15.0, &lt; 6.18 to &gt;= 5.15.0, &lt; 6.26 ([8de262a](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/8de262a03f30266b5d70166b8d75ad91315c76ea))
+* **deps:** update hashicorp/aws requirement from &gt;= 5.15.0, &lt; 6.18 to &gt;= 5.15.0, &lt; 6.26 in /examples/network-associations ([4334a85](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/4334a855e0697253d44b6445a239493341389074))
+* **deps:** update hashicorp/aws requirement from &gt;= 5.15.0, &lt; 6.18 to &gt;= 5.15.0, &lt; 6.26 in /examples/simple ([f2837b7](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/f2837b7b6394708404df994655da869464f6e3ee))
+
 ## [1.1.3](https://github.com/Coalfire-CF/terraform-aws-securitygroup/compare/v1.1.2...v1.1.3) (2025-12-03)
 
 

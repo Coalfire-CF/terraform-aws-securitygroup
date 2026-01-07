@@ -254,26 +254,24 @@ Copyright © 2023 Coalfire Systems Inc.
 |-- examples
 |   |-- network-associations
 |   |   |-- README.md
+|   |   |-- example.auto.tfvars
 |   |   |-- locals.tf
 |   |   |-- main.tf
 |   |   |-- outputs.tf
 |   |   |-- providers.tf
-|   |   |-- tfvars
-|   |   |   |-- example.tfvars
 |   |   |-- variables.tf
 |   |-- simple
 |       |-- README.md
+|       |-- example.auto.tfvars
 |       |-- locals.tf
 |       |-- main.tf
 |       |-- outputs.tf
 |       |-- providers.tf
-|       |-- tfvars
-|       |   |-- example.tfvars
 |       |-- variables.tf
 |-- locals.tf
 |-- main.tf
 |-- outputs.tf
-|-- providers.tf
 |-- release-please-config.json
+|-- required-providers.tf
 |-- variables.tf
 ```

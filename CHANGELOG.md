@@ -1,5 +1,22 @@
 # Changelog
 
+## [1.1.5](https://github.com/Coalfire-CF/terraform-aws-securitygroup/compare/v1.1.4...v1.1.5) (2026-01-08)
+
+
+### Miscellaneous
+
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-checkov.yml ([a47f55a](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/a47f55a55bd364ee0b5b4c3134fd572071caeb0f))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-checkov.yml from 0.1.0 to 0.1.1 ([26bce6a](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/26bce6ad693d5aa6558a10c6ab1bbba0163697b6))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-dependabot.yml ([89ab42b](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/89ab42b031520627861731096e4633f2ec8356ff))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-dependabot.yml from 0.1.0 to 0.1.1 ([045c649](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/045c64986061d526a5808257847bbe57b0fc6750))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-markdown-lint.yml ([2010769](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/20107698a4652caf4ce58fd563e0984ae65131bf))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-markdown-lint.yml from 0.1.0 to 0.1.1 ([22c8edd](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/22c8edd2ac946921c710a9fcb0ca050683c9fb4f))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-fmt.yml ([952db9e](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/952db9ed39d598b2edf0234f4769382be69be636))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-fmt.yml from 0.1.0 to 0.1.1 ([7152696](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/7152696af26edb4b7e3d5cd6b33642fd50501d4b))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-validate.yml ([747ea82](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/747ea82302441c94e40f7996ca20e4d2f3e31fb9))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-validate.yml from 0.1.0 to 0.1.1 ([bc9ab3e](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/bc9ab3ed938a2d4e323b92be1ef35c0f7ca51495))
+* update README tree ([0a7bc64](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/0a7bc64beb3608c3876fb16baf9b795336ba9936))
+
 ## [1.1.4](https://github.com/Coalfire-CF/terraform-aws-securitygroup/compare/v1.1.3...v1.1.4) (2025-12-10)
 
 

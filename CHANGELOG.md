@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.1.6](https://github.com/Coalfire-CF/terraform-aws-securitygroup/compare/v1.1.5...v1.1.6) (2026-01-19)
+
+
+### Miscellaneous
+
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-dependabot.yml ([#59](https://github.com/Coalfire-CF/terraform-aws-securitygroup/issues/59)) ([d53fb34](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/d53fb34c8a4dafe4f856db17eba75474367ee2f4))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-release.yml ([39e275f](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/39e275f709d27ad3c373fa8b6f352166adffa985))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-release.yml from 0.1.0 to 0.1.1 ([cbca2c1](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/cbca2c1e944dc35f26ebf347ae00a5076c6438fc))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-docs.yml ([2086cf5](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/2086cf5874c7c6a09665f6f766b1bdfdb1c6e98d))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-docs.yml from 0.1.0 to 0.1.1 ([be96669](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/be96669d3b84e028850c655805ddde033cc40329))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-tree-readme.yml ([68c7a50](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/68c7a50ec9626089ccdb8f46082c48f622565dda))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-tree-readme.yml ([#56](https://github.com/Coalfire-CF/terraform-aws-securitygroup/issues/56)) ([b2d1e6a](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/b2d1e6a977639dc5747ba65af5fe95e489978648))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-tree-readme.yml from 0.1.0 to 0.1.1 ([4fe162e](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/4fe162e5e689c5d050e13643a6078c701ab61e3a))
+* update org-release.yml to v0.2.1 ([#60](https://github.com/Coalfire-CF/terraform-aws-securitygroup/issues/60)) ([ec588ed](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/ec588ed51b766e15e3421653026f0fd4ff12106a))
+
 ## [1.1.5](https://github.com/Coalfire-CF/terraform-aws-securitygroup/compare/v1.1.4...v1.1.5) (2026-01-08)
 
 

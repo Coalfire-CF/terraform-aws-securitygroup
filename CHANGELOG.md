@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.7](https://github.com/Coalfire-CF/terraform-aws-securitygroup/compare/v1.1.6...v1.1.7) (2026-01-28)
+
+
+### Bug Fixes
+
+* tf validate workflow ([8a9933b](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/8a9933b83d534b8b3074543ed515ff56c907c24c))
+* tf validate workflow ([b83f7f5](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/b83f7f54d89895f46a021706517d182d3894ab2a))
+
 ## [1.1.6](https://github.com/Coalfire-CF/terraform-aws-securitygroup/compare/v1.1.5...v1.1.6) (2026-01-21)
 
 

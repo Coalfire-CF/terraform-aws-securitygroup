@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.1.7](https://github.com/Coalfire-CF/terraform-aws-securitygroup/compare/v1.1.6...v1.1.7) (2026-01-30)
+
+
+### Bug Fixes
+
+* tf validate workflow ([8a9933b](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/8a9933b83d534b8b3074543ed515ff56c907c24c))
+* tf validate workflow ([b83f7f5](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/b83f7f54d89895f46a021706517d182d3894ab2a))
+
+
+### Miscellaneous
+
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-dependabot.yml ([f57f43f](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/f57f43fc7cddb110f42a59c2b40e70a4d0176503))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-dependabot.yml from 0.2.1 to 0.2.2 ([9616690](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/96166907a3b5afe22ee0eb2b734ec6478ea81b5a))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-release.yml ([7d4e516](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/7d4e5165b93a925e29b71fe2f919117be5a35bf2))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-release.yml from 0.2.1 to 0.2.2 ([484e2f8](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/484e2f8641a74f12d708754084d4d59f7c571128))
+
 ## [1.1.6](https://github.com/Coalfire-CF/terraform-aws-securitygroup/compare/v1.1.5...v1.1.6) (2026-01-21)
 
 

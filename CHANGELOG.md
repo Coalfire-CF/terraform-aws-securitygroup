@@ -1,101 +1,72 @@
 # Changelog
 
-## [1.1.6](https://github.com/Coalfire-CF/terraform-aws-securitygroup/compare/v1.1.5...v1.1.6) (2026-01-21)
-
-
-### Bug Fixes
-
-* use correct CoalForge team slug ([203eab1](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/203eab1f045273555d0cbcd04d08cc2de35e1b37))
-
-
-### Miscellaneous
-
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-checkov.yml ([d6c0f99](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/d6c0f99e10f2f5ca43b70987220af43a19e66e91))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-checkov.yml from 0.1.1 to 0.2.1 ([6c286d2](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/6c286d24f1860b349e1f0518cf5f2938744596ea))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-dependabot.yml ([18d4fbd](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/18d4fbd771e77e4b70a3ef0f2145e204b6238987))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-dependabot.yml ([#59](https://github.com/Coalfire-CF/terraform-aws-securitygroup/issues/59)) ([d53fb34](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/d53fb34c8a4dafe4f856db17eba75474367ee2f4))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-dependabot.yml from 0.2.0 to 0.2.1 ([c2260f4](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/c2260f48b10842777b921a6157509341a40c10ce))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-markdown-lint.yml ([a502e27](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/a502e27910f71a8c93843084a732c2760465d720))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-markdown-lint.yml from 0.1.1 to 0.2.1 ([a6bc387](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/a6bc387e73317af6d77f6328e39b38df5bc3147e))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-release.yml ([39e275f](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/39e275f709d27ad3c373fa8b6f352166adffa985))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-release.yml from 0.1.0 to 0.1.1 ([cbca2c1](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/cbca2c1e944dc35f26ebf347ae00a5076c6438fc))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-docs.yml ([1217726](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/121772666389e17cdcddea1c8bdbd883d65b2250))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-docs.yml ([2086cf5](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/2086cf5874c7c6a09665f6f766b1bdfdb1c6e98d))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-docs.yml from 0.1.0 to 0.1.1 ([be96669](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/be96669d3b84e028850c655805ddde033cc40329))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-docs.yml from 0.1.1 to 0.2.1 ([a69c971](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/a69c9717efbec6c6aa3ec595bf9bbdfeed195438))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-fmt.yml ([679c70d](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/679c70d6c71091376d1bdfeb0dcd9ae1a734d2ec))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-fmt.yml from 0.1.1 to 0.2.1 ([d75734b](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/d75734b8a24bb761dce62c99b0087fe80e3c681a))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-validate.yml ([f632de4](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/f632de48847759493bc1e1e36f32d374fd02464a))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-validate.yml from 0.1.1 to 0.2.1 ([2ec7408](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/2ec7408afda047a09527cf8a851daa4636ae0637))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-tree-readme.yml ([bd98a60](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/bd98a605a0a0b1e8d730c66b99bb4f4aef5cbe21))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-tree-readme.yml ([68c7a50](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/68c7a50ec9626089ccdb8f46082c48f622565dda))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-tree-readme.yml ([#56](https://github.com/Coalfire-CF/terraform-aws-securitygroup/issues/56)) ([b2d1e6a](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/b2d1e6a977639dc5747ba65af5fe95e489978648))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-tree-readme.yml from 0.1.0 to 0.1.1 ([4fe162e](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/4fe162e5e689c5d050e13643a6078c701ab61e3a))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-tree-readme.yml from 0.2.0 to 0.2.1 ([fa6330b](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/fa6330bae1db191863a053c3bf183435b8cbaf8a))
-* update CODEOWNERS ([364613f](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/364613fcf5c8be52ffd00cb3265d817afc5c40b4))
-* update CODEOWNERS ([f64e008](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/f64e0087a7146828241fb49ac4e4b0792548f1fb))
-* update org-release.yml to v0.2.1 ([#60](https://github.com/Coalfire-CF/terraform-aws-securitygroup/issues/60)) ([ec588ed](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/ec588ed51b766e15e3421653026f0fd4ff12106a))
-
-## [1.1.5](https://github.com/Coalfire-CF/terraform-aws-securitygroup/compare/v1.1.4...v1.1.5) (2026-01-08)
-
-
-### Miscellaneous
-
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-checkov.yml ([a47f55a](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/a47f55a55bd364ee0b5b4c3134fd572071caeb0f))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-checkov.yml from 0.1.0 to 0.1.1 ([26bce6a](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/26bce6ad693d5aa6558a10c6ab1bbba0163697b6))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-dependabot.yml ([89ab42b](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/89ab42b031520627861731096e4633f2ec8356ff))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-dependabot.yml from 0.1.0 to 0.1.1 ([045c649](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/045c64986061d526a5808257847bbe57b0fc6750))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-markdown-lint.yml ([2010769](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/20107698a4652caf4ce58fd563e0984ae65131bf))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-markdown-lint.yml from 0.1.0 to 0.1.1 ([22c8edd](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/22c8edd2ac946921c710a9fcb0ca050683c9fb4f))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-fmt.yml ([952db9e](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/952db9ed39d598b2edf0234f4769382be69be636))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-fmt.yml from 0.1.0 to 0.1.1 ([7152696](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/7152696af26edb4b7e3d5cd6b33642fd50501d4b))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-validate.yml ([747ea82](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/747ea82302441c94e40f7996ca20e4d2f3e31fb9))
-* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-validate.yml from 0.1.0 to 0.1.1 ([bc9ab3e](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/bc9ab3ed938a2d4e323b92be1ef35c0f7ca51495))
-* update README tree ([0a7bc64](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/0a7bc64beb3608c3876fb16baf9b795336ba9936))
-
-## [1.1.4](https://github.com/Coalfire-CF/terraform-aws-securitygroup/compare/v1.1.3...v1.1.4) (2025-12-10)
-
-
-### Miscellaneous
-
-* **deps:** update hashicorp/aws requirement from &gt;= 5.15.0, &lt; 6.18 to &gt;= 5.15.0, &lt; 6.26 ([1849d4d](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/1849d4d2aa8c335b0c40414067742fb89deeb28c))
-* **deps:** update hashicorp/aws requirement from &gt;= 5.15.0, &lt; 6.18 to &gt;= 5.15.0, &lt; 6.26 ([8de262a](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/8de262a03f30266b5d70166b8d75ad91315c76ea))
-* **deps:** update hashicorp/aws requirement from &gt;= 5.15.0, &lt; 6.18 to &gt;= 5.15.0, &lt; 6.26 in /examples/network-associations ([4334a85](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/4334a855e0697253d44b6445a239493341389074))
-* **deps:** update hashicorp/aws requirement from &gt;= 5.15.0, &lt; 6.18 to &gt;= 5.15.0, &lt; 6.26 in /examples/simple ([f2837b7](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/f2837b7b6394708404df994655da869464f6e3ee))
-
-## [1.1.3](https://github.com/Coalfire-CF/terraform-aws-securitygroup/compare/v1.1.2...v1.1.3) (2025-12-03)
-
-
-### Miscellaneous
-
-* **deps:** update hashicorp/aws requirement from &gt;= 5.15.0, &lt; 6.17 to &gt;= 5.15.0, &lt; 6.18 in /examples/network-associations ([703a08d](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/703a08d925a38a3cd29360cbf92e9d795a4eed54))
-* **deps:** update hashicorp/aws requirement from &gt;= 5.15.0, &lt; 6.17 to &gt;= 5.15.0, &lt; 6.18 in /examples/simple ([e3ee7f5](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/e3ee7f5d1039f8d80efdf6e9bf7ae08e6c520d2a))
-* remove old LICENSE file ([b4c4808](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/b4c4808815c604869fa7e8b4879b713dd5afce74))
-* remove old LICENSE file ([3161fe6](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/3161fe6a5d3130383652efbd33698ba56891757e))
-* update README tree ([6dd9762](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/6dd97620e51527c919028c90f76050e787305548))
-
-## [1.1.2](https://github.com/Coalfire-CF/terraform-aws-securitygroup/compare/v1.1.1...v1.1.2) (2025-10-24)
-
-
-### Miscellaneous
-
-* update README tree ([484084c](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/484084cc6494a121a598d66aa9ef23c802f2457f))
-
-## [1.1.1](https://github.com/Coalfire-CF/terraform-aws-securitygroup/compare/v1.1.0...v1.1.1) (2025-10-10)
-
-
-### Miscellaneous
-
-* refresh dependabot.yml & TF sources ([8f76df8](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/8f76df82cdbf15914b76c3bb4c4b0f90615c3847))
-* Sync template files ([dd0d1c0](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/dd0d1c0097608dd245435df7dec83138675978e4))
-* Sync template files from Coalfire-CF/CS-ToolingTemplate ([ed79626](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/ed79626d80c420d14f2cf2e6cdb8e215520648d9))
-
-## [1.1.0](https://github.com/Coalfire-CF/terraform-aws-securitygroup/compare/v1.0.2...v1.1.0) (2025-10-02)
+## [0.1.0](https://github.com/Coalfire-CF/CS-ToolingTemplate/compare/v0.0.31...v0.1.0) (2026-04-08)
 
 
 ### Features
 
-* initialize dependabot (coalforge) ([26e1b62](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/26e1b62c6852dd29cf278914b0c4691645af934f))
-* initialize dependabot (coalforge) ([2b9f577](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/2b9f57719c354a610daf40e0b6f7e93e924f61bf))
-* initialize release-please (coalforge) ([4297fb0](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/4297fb0e28696d408d596e5c53711a4fc30120a0))
-* initialize release-please (coalforge) ([c72609b](https://github.com/Coalfire-CF/terraform-aws-securitygroup/commit/c72609b97754081df91b12a266f7a2cf5d23e647))
+* add org dependabot action that auto updates dependabot sources … ([b1c5739](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/b1c57396f9e170c8c3a3f9b06f169b1825d12b02))
+* add org dependabot action that auto updates dependabot sources for terraform ([7eb2d14](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/7eb2d148be8d6d3be7847d64619bfb9b32c6e3cd))
+* add release please config file and manifest for release process usage. ([157957a](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/157957aab02cd9e983bb9e9fdae09c411edc753b))
+* add release please config file and manifest for release process… ([d6fe9c5](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/d6fe9c55f5b481d0d60d0353e954477a6a3d0319))
+* add release please init on new repo from template ([b828b70](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/b828b7048bdf7e28b6c10f317f26533e8dc318ff))
+* add release please init on new repo from template ([f81add1](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/f81add1b40e6ba51036c7f114c046ecd4fb468db))
+
+
+### Bug Fixes
+
+* add in LFS ignore logic ([074de35](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/074de35f04183b374116e58a28d6212dfedeb634))
+* add in LFS ignore logic ([007261d](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/007261dea2389b7ad58824a44ac27b9ed3fee7da))
+* add space in commit message in sync script ([3748a04](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/3748a04ce4ffa7b4bc0bfe8838fc31f1c2d795d9))
+* adding back in the DISABLE code for the workflows ([948e6ee](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/948e6ee7680ecab132b223d6bb398d0a788ab502))
+* adding back in the DISABLE code for the workflows ([dd87916](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/dd87916a316b25d2ab0d665cc769dceb17303991))
+* adding dry-run log to be ignored by default in the script ([f5e0658](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/f5e0658cb309f51b8f3e2fc017304aaeda75d255))
+* adding ignore dependabot file in the template repo itself. ([cabc87b](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/cabc87b58b4feea4aa048a4cfcbc659e295ce3a2))
+* adding in the directory for a few workflows ([8569df9](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/8569df9460cea64cddc31272e2ffe58cf19f05a5))
+* adding release manifest and config to ignore files ([4626e23](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/4626e23a92a3fa62d7ff8ad6240baad0345554fb))
+* may need to tweak action ([a3184dd](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/a3184ddb81aaceb517cbecede26152a610880f13))
+* missing permission ([6eac98d](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/6eac98d1be2c18dfef24a3e3daf13a2a6bb44acc))
+* Narrow execution rules. ([c1d2714](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/c1d2714e39a8a4dcf3259c64423fdcfeab4a5f19))
+* slight ci cleanup ([ebaeddf](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/ebaeddf8dad952dc4a5ba8d046762157ccf6f27f))
+* sync script hard coded to ignore anything .git* which includes workflows ([15c01fe](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/15c01fe0551f1e3029e335b7fb316d3ca096fc70))
+* testing if dry-run can be ignored in action instead ([72fa9f5](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/72fa9f5c19028e29aa705675039bd20ee50e71c5))
+* testing new action call ([c8f6b4a](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/c8f6b4a9d58dee9b6bcf751a1d2f2365fb6605df))
+* update filename to be ignored correctly in sync steps ([53e24dd](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/53e24dd110b8a850b8493ef015430d7d2fc85377))
+* update filename to be ignored correctly in sync steps ([8565cb4](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/8565cb415e03fb3191bf9c17c0757933350269c9))
+
+
+### Miscellaneous
+
+* allow pr/merge triggers on changes to the sync template ([b0840bd](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/b0840bd767f080ef2bcfc234b6b0959ed80c9a65))
+* Bump org workflow to latest tag, bump terraform version ([f16507d](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/f16507d846d6729f266ec1dd75dcf10c11a206b1))
+* coalforge pak actions tooltemplate sync ([1c189d7](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/1c189d7c737691d01a83b3c70473246123a39108))
+* coalforge pak actions tooltemplate sync ([d4cda62](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/d4cda629d91e46589d6378858a37b68fc034e4bc))
+* **deps:** bump actions/checkout from 3 to 5 ([c4d4ca7](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/c4d4ca71c2f87abf5325c08904fee673b15d5758))
+* **deps:** bump actions/checkout from 3 to 5 ([42ca091](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/42ca091f203505269166a17de59c3500d07f7ee9))
+* **deps:** bump actions/checkout from 5 to 6 ([5747669](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/5747669cd1f1736834831fbb0e053bd3ebffdee9))
+* **deps:** bump actions/checkout from 5 to 6 ([3a7a424](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/3a7a42487ec89d6f108aa30007a574d6c423ced2))
+* **deps:** bump actions/github-script from 7 to 8 ([9026eef](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/9026eefc360ffd96cfa7a8fcc2dc5a8e03b3e819))
+* **deps:** bump actions/github-script from 7 to 8 ([abeff8e](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/abeff8e42cdb2c84a3b1d5c83e23323e2b853376))
+* **deps:** bump actions/upload-artifact from 4 to 6 ([222f892](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/222f892fe894a3f80b1323e4be873e5dc6373afc))
+* **deps:** bump actions/upload-artifact from 4 to 6 ([8e96d9a](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/8e96d9a273726cd3fa720be186f14ac93a16ac98))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-checkov.yml ([a73a099](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/a73a099ebf1600f2f8f3911c9be5c9efef5d35c1))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-checkov.yml from 0.1.0 to 0.1.1 ([d21b618](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/d21b618c28dc98d7c9f6cd8530ef5bd59f39be2e))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-dependabot.yml ([7d2fa9d](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/7d2fa9d8f8e45c286c441dc05a7e6d9a816da2dd))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-dependabot.yml from 0.1.0 to 0.1.1 ([1de5dd4](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/1de5dd4cfacee0305491918ed1b164d4cfd31a73))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-release.yml ([5fafd9c](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/5fafd9c6b996659579d83e4ff715817128f7f187))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-release.yml from 0.1.0 to 0.1.1 ([eb63fbf](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/eb63fbf5ccbd0e902dc00b7a12a67768337bffba))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-docs.yml ([9dcf3a7](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/9dcf3a7aeb79725c5b7903813b1a12fa37981d11))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-docs.yml from 0.1.0 to 0.1.1 ([237587c](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/237587c73d3c7c0062a5a44f91898dc7a57a0b3f))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-validate.yml ([53e38c7](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/53e38c7b4292c35d8dcf59ae26c0bde5d8c920cf))
+* **deps:** bump Coalfire-CF/Actions/.github/workflows/org-terraform-validate.yml from 0.1.0 to 0.1.1 ([0da0a29](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/0da0a29d3d9e93182afe2f3d7511a203e6a09576))
+* need to test protected branch ([a2450bd](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/a2450bde4958a87e4942fd3a16f14599510559fa))
+* refresh dependabot.yml & TF sources ([77e6db9](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/77e6db9e8b1a78973efb421ba2a92d095eb9783e))
+* testing cleanup sync against single repo ([2a1727d](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/2a1727dc5f37eaad75da0eb8a38685b82fdfef98))
+* testing cleanup sync against single repo ([fe7f406](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/fe7f4068e789fb65e27b65d3d6891ab81fdb172b))
+* testing file removal on pak ([8087a2f](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/8087a2fe2534acea86ce0d7cca516d85469e83c1))
+* testing file removal on pak ([5078d02](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/5078d02155b10e0998707d27bd88fb8405ff61b5))
+* testing sync on a pak ([6818139](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/68181391a0df8e5d67cfb01009a11f3a709f3142))
+* testing sync on a pak ([fc2763a](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/fc2763a8642debf1fd281bbbc30a2103204bd6ab))
+* update README tree ([e52dc37](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/e52dc37227f58223000ff9404cc30d0deb41b236))
+* update workflow permissions ([b962855](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/b962855ae264fd0b3740fcc0bccc986eebec7d72))
+* update workflow permissions ([a480853](https://github.com/Coalfire-CF/CS-ToolingTemplate/commit/a4808538038cd310c357e780ce1d122a7bc59b9d))
